@@ -30,9 +30,10 @@ hotfix/**
     * :construction: `:construction:` : 기능을 만드는 중 미완성인 상태로 커밋을 할 때
     * :fire: `:fire:` 핫픽스 이슈를 고쳤을 때
     * :bug: `:bug:` 버그 이슈를 고쳤을 때
-    * :speech_balloon: `:speech_balloon:` 주석 관련, 용어 관련 커밋 (i18n)
-    * :dizzy: `:dizzy:` 애니메이션 기능을 추가하였을 때 (ex. 드래그앤드롭 기능, 슬라이드 기능 등)
     * :sparkles: `:sparkles:` 기능단위 페이지 구현 완료, API 추가 완료 후
     * :white_check_mark: `:white_check_mark:` 테스트 코드 작성 완료 후
     * :zap: `:zap:` 기존에 있는 기능을 개선했을 때
     * :recycle: `:recycle:` 코드 리팩토링을 했을 때
+    * :lipstick: `:lipstick:`스타일링을 수정했을 때
+    * :dizzy: `:dizzy:` 애니메이션 기능을 추가하였을 때 (ex. 드래그앤드롭 기능, 슬라이드 기능 등)
+    * :speech_balloon: `:speech_balloon:` 주석 관련, 용어 관련 커밋 (i18n)
