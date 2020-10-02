@@ -1,3 +1,4 @@
+import { put, delay, takeEvery, takeLatest } from 'redux-saga/effects'
 // 액션 타입
 const INCREASE = 'INCREASE';
 const DECREASE = 'DECREASE';
