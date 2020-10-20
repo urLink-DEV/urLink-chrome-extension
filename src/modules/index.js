@@ -1,18 +1,13 @@
-import { createStore, applyMiddleware, combineReducers } from 'redux';
-import createSagaMiddleware from 'redux-saga';
-import { all } from 'redux-saga/effects';
-import counter, { counterSaga } from './counter';
+import { combineReducers } from "redux"
+import { fork, all } from "redux-saga/effects"
+import { todosReducer, todosSaga } from "./todos"
 
-const rootReducer = combineReducers({ counter });
+// root reducer
+export const rootReducer = combineReducers({
+	todos: todosReducer,
+})
+
+// root saga
 export function* rootSaga() {
-  yield all([counterSaga()]); // all 은 배열 안의 여러 사가를 동시에 실행시켜줍니다.
+	yield all([fork(todosSaga)])
 }
-
-const sagaMiddleware = createSagaMiddleware();
-const store = createStore(rootReducer,  applyMiddleware(
-  sagaMiddleware,
-));
-
-sagaMiddleware.run(rootSaga);
-
-export default store;
