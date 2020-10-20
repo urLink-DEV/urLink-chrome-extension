@@ -1,5 +1,5 @@
 import React from "react"
-import { useDispatch, useSelector } from "react-redux"
+import { useDispatch } from "react-redux"
 import useTodos from "../../modules/todos/hooks/useTodos"
 import { getTodos } from "../../modules/todos/"
 
