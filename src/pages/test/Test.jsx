@@ -1,7 +1,7 @@
 import React from "react"
 import { useDispatch } from "react-redux"
-import useTodos from "../../modules/todos/hooks/useTodos"
-import { getTodos } from "../../modules/todos/"
+import useTodos from "@modules/todos/hooks/useTodos"
+import { getTodos } from "@modules/todos/"
 
 export default function Test() {
 	const dispatch = useDispatch()
