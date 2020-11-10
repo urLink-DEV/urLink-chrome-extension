@@ -2,6 +2,7 @@ import React from "react"
 import { Router, Route, Link } from "react-router-dom"
 import { render } from "react-dom"
 import { Provider } from "react-redux"
+import thunkMiddleware from "redux-thunk"
 import { createStore, applyMiddleware } from "redux"
 import { composeWithDevTools } from "redux-devtools-extension"
 import { createBrowserHistory } from "history"
@@ -18,7 +19,7 @@ const sagaMiddleware = createSagaMiddleware({
 
 const store = createStore(
 	rootReducer,
-	composeWithDevTools(applyMiddleware(sagaMiddleware))
+	composeWithDevTools(applyMiddleware(sagaMiddleware, thunkMiddleware))
 )
 
 sagaMiddleware.run(rootSaga)
